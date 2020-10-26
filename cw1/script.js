@@ -10,8 +10,10 @@ function draw()
     {
         for(x=0; x<width; x++)
         {
-            set(x,y,color(x/width*256));
-            console.log((y));
+            dx=abs(x-width/2);
+            dy=abs(y-height/2);
+            d=sqrt(dx*dx+dy*dy)
+            set(x,y,color(255-d,d,(x+y)/(width+height)*256));
         }
     }
     updatePixels();

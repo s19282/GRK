@@ -1,49 +1,53 @@
 //noprotect
+    var x1,y1,x2,y2,x3,y3;
 function setup()
 {
     createCanvas(800,600);
+    x1=Math.floor(width/2);
+    y1=Math.floor(height*0.1);
+    x2=Math.floor(width*0.2);
+    y2=Math.floor(height*0.9);
+    x3=Math.floor(width*0.8);
+    y3=Math.floor(height*0.9);
     noLoop();
+
 }
 function draw()
 {
-    for(y=0; y<height*0.7; y++)
+    background(1);
+    console.log(y1);
+    stroke('white');
+    point(x1,y1);
+    point(x2,y2);
+    point(x3,y3);
+    var cx=x1,cy=y1;
+
+    for (i=0; i<30000; i++)
     {
-        for(x=0; x<width; x++)
+        n = Math.floor(random(0,3));
+        switch (n)
         {
-            set(x,y,color(108, 250, 248));
+            case 0:
+            {
+                cx=Math.floor((cx+x1)/2);
+                cy=Math.floor((cy+y1)/2);
+                point(cx,cy);
+                break;
+            }
+            case 1:
+            {
+                cx=Math.floor((cx+x2)/2);
+                cy=Math.floor((cy+y2)/2);
+                point(cx,cy);
+                break;
+            }
+            default:
+            {
+                cx=Math.floor((cx+x3)/2);
+                cy=Math.floor((cy+y3)/2);
+                point(cx,cy);
+                break;
+            }
         }
     }
-
-    for(y=height*0.7; y<height; y++)
-    {
-        for(x=0; x<width; x++)
-        {
-            set(x,y,color(35, 209, 7));
-        }
-    }
-
-    for(y=height*0.3; y<height*0.7; y++)
-    {
-        for(x=width*0.25; x<width*0.75; x++)
-        {
-            set(x,y,color(53, 19, 25));
-        }
-    }
-
-    for(y=height*0.05,a=0; y<height*0.3; y++,a+=2)
-    {
-        for(x=width/2-a; x<width/2+a; x++)
-        {
-            set(x,y,color(193, 16, 51));
-        }
-    }
-
-    for(i=0; i<1000; i++)
-    {
-        x = floor(random(0,width));
-        y = floor(random(height*0.7,height));
-        set(x,y,color("#"+floor(random()*256*256*256).toString(16)));
-    }
-
-    updatePixels();
 }

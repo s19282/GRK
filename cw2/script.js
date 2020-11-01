@@ -32,12 +32,28 @@ function setup()
             c = cmax - cmin;
             l=(cmax+cmin)/2;
             s = c/(1-Math.abs(2*l-1));
+            let h;
+
+            if(c===0)
+                h=0;
+            else if(v===r)
+                h=((g-b)/c)%6;
+            else if(v===g)
+                h=((b-r)/c)+2;
+            else
+                h=((r-g)/c)+4;
+
+            h/=6;
+
+            if(h<0)
+                h+=1;
 
             pX = (pos / 4) % 256;
             pY = (pos / 4) / 256;
 
-            img_v.set(pX, pY, 255 * v);
+            img_h.set(pX, pY, 255 * h);
             img_s.set(pX, pY, 255 * s);
+            img_v.set(pX, pY, 255 * v);
         }
     }
 

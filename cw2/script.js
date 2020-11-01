@@ -29,11 +29,15 @@ function setup()
             cmin = Math.min(r, g, b);
 
             v = cmax;
+            c = cmax - cmin;
+            l=(cmax+cmin)/2;
+            s = c/(1-Math.abs(2*l-1));
 
             pX = (pos / 4) % 256;
             pY = (pos / 4) / 256;
 
-             img_v.set(pX, pY, 255 * v);
+            img_v.set(pX, pY, 255 * v);
+            img_s.set(pX, pY, 255 * s);
         }
     }
 

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f72c3b02-7ecf-4467-8d18-7ae45bb1162b" name="Default Changelist" comment="Zadanie 5" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jQAR1b9vKCWDLxHpJT1yWBLylC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../TIN/Github/TIN" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mateusz\Desktop\PJATK\Rok 3\Semestr 1\GRK\Github\GRK\cw1" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f72c3b02-7ecf-4467-8d18-7ae45bb1162b" name="Default Changelist" comment="" />
+      <created>1603725930649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603725930649</updated>
+      <workItem from="1603725931781" duration="1328000" />
+      <workItem from="1603729935077" duration="11281000" />
+      <workItem from="1603811728038" duration="289000" />
+      <workItem from="1603812213328" duration="27000" />
+      <workItem from="1604057627213" duration="19000" />
+    </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1603726374967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603726374967</updated>
+    </task>
+    <task id="LOCAL-00002" summary="przykład">
+      <created>1603726821547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603726821547</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Zadanie 1">
+      <created>1603730667910</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603730667910</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Zadanie 2">
+      <created>1603731664517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603731664517</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Zadanie 3">
+      <created>1603733695130</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603733695130</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Zadanie 4 kilka pętli">
+      <created>1603737390227</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603737390227</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Zadanie 5">
+      <created>1603741735385</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603741735385</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <MESSAGE value="przykład" />
+    <MESSAGE value="Zadanie 1" />
+    <MESSAGE value="Zadanie 2" />
+    <MESSAGE value="Zadanie 3" />
+    <MESSAGE value="Zadanie 4 kilka pętli" />
+    <MESSAGE value="Zadanie 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 5" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="625" y="370" key="FileChooserDialogImpl" timestamp="1604057644915">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="625" y="370" key="FileChooserDialogImpl/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1604057644915" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603811902620">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1603811902620" />
+    <state x="1752" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860/1440.0.1440.860@1440.0.1440.860" timestamp="1603741739084" />
+    <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603812019564">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1603812019564" />
+    <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603811905532">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="537" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1603811905532" />
+  </component>
+</project>

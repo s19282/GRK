@@ -2,6 +2,7 @@ let x0=-1;
 let y0=-1;
 let x1=-1;
 let y1=-1;
+let size=512;
 
 function preload()
 {
@@ -10,7 +11,7 @@ function preload()
 
 function setup()
 {
-    createCanvas(512,512);
+    createCanvas(size,size);
     background(255);
 }
 
@@ -43,9 +44,9 @@ function mouseReleased()
 function set_pixel(x,y,c)
 {
     idx=(y*512+x)*4;
-    pixels[idx]=c;
+    pixels[idx]=-c;
     pixels[idx+1]=c;
-    pixels[idx+2]=c;
+    pixels[idx+2]=0;
     pixels[idx+3]=255;
 }
 
@@ -53,12 +54,13 @@ function draw_line()
 {
     let dx=x1-x0;
     let dy=y1-y0;
-    let a=dy/dx;
-    let b = y0-a*x0;
 
-    for(let i=x0; i<x1; i++)
+    for(let i=0; i<size; i++)
     {
-        set_pixel(i,Math.round(a*i+b),0);
+        for(let j=0; j<size; j++)
+        {
+            set_pixel(i,j,dy/dx*(i-x0) - (j-y0));
+        }
     }
 
 }

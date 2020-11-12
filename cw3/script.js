@@ -59,7 +59,7 @@ function draw_line()
     {
         for(let j=0; j<size; j++)
         {
-            set_pixel(i,j,dy/dx*(i-x0) - (j-y0));
+            set_pixel(i,j,2*dy*(i-x0) - 2*dx*(j-y0));
         }
     }
 

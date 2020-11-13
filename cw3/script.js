@@ -1,6 +1,13 @@
-let last_x=-1;
-let last_y=-1;
+let x0=-1;
+let y0=-1;
+let x1=-1;
+let y1=-1;
 let size=512;
+
+function preload()
+{
+
+}
 
 function setup()
 {
@@ -8,57 +15,69 @@ function setup()
     background(255);
 }
 
+function mousePressed()
+{
+    x0=mouseX;
+    y0=mouseY;
+}
+
 function mouseDragged()
 {
-    if(mouseButton !== LEFT) return;
-    if(last_x>0)
-    {
-        line(last_x,last_y,mouseX,mouseY);
-    }
-    last_x=mouseX;
-    last_y=mouseY;
+    x1=mouseX;
+    y1=mouseY;
+    background(255);
+    noStroke();
+    fill('red');
+    ellipse(x0-3,y0-3,6);
+    fill('green');
+    ellipse(x1-3,y1-3,6);
 }
 
 function mouseReleased()
 {
-    last_x=last_y=-1;
-    if(mouseButton === RIGHT)
-    {
-        loadPixels();
-        flood_fill(mouseX,mouseY);
-        updatePixels();
-    }
+    background(255);
+    loadPixels();
+    draw_line();
+    updatePixels();
 }
 
 function set_pixel(x,y,c)
 {
-    let idx=(y*512+x)*4;
+    idx=(y*512+x)*4;
     pixels[idx]=-c;
     pixels[idx+1]=c;
     pixels[idx+2]=0;
     pixels[idx+3]=255;
 }
 
-function get_pixel(x,y)
+function draw_line()
 {
-    let idx=(y*512+x)*4;
-    return pixels[idx];
-}
+    let dx=Math.abs(x1-x0);
+    let dy=Math.abs(y1-y0);
+    let changed = false;
+    if(!(dy<dx)) {
+        changed = true;
+        [x0,y0] = [y0,x0];
+        [x1,y1] = [y1,x1];
+        [dx,dy] = [dy,dx];
+    }
+    let dp=2*dy-dx;
+    let deq=2*dy;
+    let dinc=2*dy-2*dx;
+    let d=dp;
+    let y=y0;
+    let step=1;
+    if(!(x0<x1)) step=-1;
 
-function flood_fill(x,y)
-{
-     let stack=[];
-     stack.push([x,y]);
-     while(stack.length>0)
-     {
-         [x,y]=stack.pop();
-         if(x<0 || x>size || y<0 || y>size) continue;
-         let pixelColor = get_pixel(x,y);
-         if(pixelColor!==255) continue;
-         set_pixel(x,y,200);
-         stack.push([x,y-1]);
-         stack.push([x,y+1]);
-         stack.push([x-1,y]);
-         stack.push([x+1,y]);
-     }
+    for(let x=x0; x!==x1; x+=step)
+    {
+        changed?set_pixel(y,x,0):set_pixel(x,y,0);
+        if(d<0)
+            d+=deq;
+        else
+        {
+            d+=dinc;
+            y0<y1?y++:y--;
+        }
+    }
 }

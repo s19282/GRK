@@ -54,13 +54,24 @@ function draw_line()
 {
     let dx=x1-x0;
     let dy=y1-y0;
-
-    for(let i=0; i<size; i++)
+    let dp=2*dy-dx;
+    let deq=2*dy;
+    let dinc=2*dy-2*dx;
+    let d=dp;
+    let y=y0;
+    for(let x=x0; x<x1; x++)
     {
-        for(let j=0; j<size; j++)
+        set_pixel(x,y,0);
+        if(d<0)
         {
-            set_pixel(i,j,2*dy*(i-x0) - 2*dx*(j-y0));
+            d+=deq;
+        }
+        else
+        {
+            d+=dinc;
+            y++;
         }
     }
+
 
 }

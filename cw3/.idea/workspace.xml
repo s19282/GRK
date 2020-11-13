@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70f9460b-28d7-4ae7-bd2b-350db6168a90" name="Default Changelist" comment="Zadanie 2">
+    <list default="true" id="70f9460b-28d7-4ae7-bd2b-350db6168a90" name="Default Changelist" comment="Zadanie 2.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
@@ -53,6 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../TIN/Github/TIN" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -64,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605199825738</updated>
-      <workItem from="1605199826836" duration="8192000" />
+      <workItem from="1605199826836" duration="8644000" />
+      <workItem from="1605265078885" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1605199949786</created>
@@ -87,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605211862438</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Zadanie 2.1">
+      <created>1605214964486</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605214964486</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,18 +112,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="Zadanie 1" />
     <MESSAGE value="Zadanie 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 2" />
+    <MESSAGE value="Zadanie 2.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie 2.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="346" y="108" key="#Inspections" timestamp="1605203250385">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="346" y="108" key="#Inspections/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1605203250385" />
+    <state x="500" y="185" key="FileChooserDialogImpl" timestamp="1605265107459">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="500" y="185" key="FileChooserDialogImpl/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1605265107459" />
+    <state x="172" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1605215275892">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="172" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1605215275892" />
     <state width="354" height="284" key="Git.Branch.Popup" timestamp="1605199902150">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -123,9 +142,13 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1605203170416" />
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1605211876478">
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2" timestamp="1605214973091">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1605211876478" />
+    <state x="312" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1605214973091" />
+    <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605215275977">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="92" y="92" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.860/1440.0.1440.860@0.0.1440.860" timestamp="1605215275977" />
   </component>
 </project>

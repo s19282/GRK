@@ -39,3 +39,19 @@ function draw()
         text('Image B',10,20);
     }
 }
+
+function makeVector(x,y)
+{
+    return [x,y,1];
+}
+
+function drawVector(img,vec)
+{
+    img.set(vec[0],vec[1],vec[2]);
+    img.updatePixels();
+}
+
+function mouseDragged()
+{
+    drawVector(imgA,makeVector(mouseX,mouseY));
+}

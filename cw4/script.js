@@ -47,7 +47,6 @@ function makeVector(x,y)
 
 function drawVector(img,vec)
 {
-    // img.loadPixels();
     img.set(vec[0],vec[1],vec[2]);
     img.updatePixels();
 }
@@ -56,11 +55,13 @@ function mouseDragged()
 {
     let vector = makeVector(mouseX,mouseY);
     drawVector(imgA,vector);
-    //drawVector(imgB, multiply(makeIdentity(),vector));
-    //drawVector(imgB, multiply(makeShift(.5,-.5),vector));
-    drawVector(imgB, multiply(makeScale(2,2),vector));
-    //drawVector(imgB, multiply(makeRotation(90),vector));
-    //drawVector(imgB, multiply(makeShear(.5,.5),vector));
+    // drawVector(imgB, multiplyVector(makeIdentity(),vector));
+    // drawVector(imgB, multiplyVector(makeShift(.5,-.5),vector));
+    // drawVector(imgB, multiplyVector(makeScale(2,2),vector));
+    // drawVector(imgB, multiplyVector(makeRotation(90),vector));
+    // drawVector(imgB, multiplyVector(makeShear(.5,.5),vector));
+    //drawVector(imgB,multiplyVector(multiplyMatrix(multiplyMatrix(makeShift(.2,.3),makeRotation(20)),makeScale(.2,.7)),vector));
+    drawVector(imgB,multiplyVector(multiplyMatrix(multiplyMatrix(makeScale(.2,.7),makeShift(.2,.3)),makeRotation(20)),vector));
 
 }
 
@@ -90,7 +91,7 @@ function makeShear(ShX,ShY)
     return [[1,ShX,0],[ShY,1,0],[0,0,1]];
 }
 
-function multiply(matrix, vector)
+function multiplyVector(matrix, vector)
 {
     let result = [0,0,0];
 
@@ -99,6 +100,22 @@ function multiply(matrix, vector)
         for(let j=0; j<matrix[i].length; j++)
         {
             result[i]+=matrix[i][j]*vector[i];
+        }
+    }
+    return result;
+}
+function multiplyMatrix(matrix,matrix2)
+{
+    let result = [[0,0,0],[0,0,0],[0,0,0]];
+
+    for(let i=0; i<matrix.length; i++)
+    {
+        for(let j=0; j<matrix[i].length; j++)
+        {
+            for(let k=0; k<matrix.length; k++)
+            {
+                result[i][j]+=matrix[i][k]*matrix2[k][j];
+            }
         }
     }
     return result;

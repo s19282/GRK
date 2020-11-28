@@ -55,3 +55,25 @@ function mouseDragged()
 {
     drawVector(imgA,makeVector(mouseX,mouseY));
 }
+
+function makeIdentity()
+{
+    return [[1,0,0],[0,1,0],[0,0,1]];
+}
+function makeShift(tX,tY)
+{
+    return [[1,0,tX],[0,1,tY],[0,0,1]];
+}
+function makeScale(sX,sY)
+{
+    return [[sX,0,0],[0,sY,0],[0,0,1]];
+}
+function makeRotation(angle)
+{
+    let rad = angle/180*Math.PI;
+    return [[Math.cos(rad),-Math.sin(rad),0],[Math.sin(rad),Math.cos(rad),0],[0,0,1]];
+}
+function makeShear(ShX,ShY)
+{
+    return [[1,ShX,0],[ShY,1,0],[0,0,1]];
+}

@@ -1,4 +1,39 @@
 body
 {
-    background-color:#ccc;
+    background-color: #87ea8a;
+    display: flex;
+    flex-direction: row;
+
 }
+#rightPanel
+{
+    width: 200px;
+    height: 490px;
+    background: #1d8a0a;
+    order: 2;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#defaultCanvas0
+{
+    border-radius: 10px;
+}
+#matrix
+{
+    border-collapse: collapse;
+}
+#matrix td
+{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 10px;
+}
+#resetMatrix
+{
+    margin-top: 5px;
+    border-radius: 3px;
+}
+

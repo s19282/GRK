@@ -48,6 +48,15 @@ function makeVector(x,y)
 function drawVector(img,vec)
 {
     img.set(vec[0],vec[1],vec[2]);
+
+    img.set(vec[0]+1,vec[1],vec[2]);
+    img.set(vec[0]-1,vec[1],vec[2]);
+    img.set(vec[0],vec[1]+1,vec[2]);
+    img.set(vec[0],vec[1]-1,vec[2]);
+    img.set(vec[0]-1,vec[1]-1,vec[2]);
+    img.set(vec[0]-1,vec[1]+1,vec[2]);
+    img.set(vec[0]+1,vec[1]-1,vec[2]);
+    img.set(vec[0]+1,vec[1]+1,vec[2]);
     img.updatePixels();
 }
 

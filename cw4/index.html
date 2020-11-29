@@ -10,31 +10,58 @@
     <body>
         <div id="rightPanel">
             <p>Matrix</p>
-            <table id="matrix">
+            <table id="matrix" contenteditable="true" >
                 <tr>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>a</td>
-                    <td>a</td>
-                    <td>a</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>
-            <button id="resetMatrix">Reset</button>
-            <label for="modify">Transpond</label>
-            <select name="owners" id="modify">
-                <option value="1">Shift</option>
-                <option value="2">Scale</option>
-                <option value="3">Rotation</option>
-                <option value="4">Shear</option>
+            <div class="subGroup">
+                <button id="reset" onclick="clearMatrix()">Reset</button>
+                <button id="update" onclick="updateMatrix()">Update</button>
+            </div>
+            <p>Shift</p>
+            <div class="subGroup">
+                <input type="text" placeholder="x" id="tX">
+                <input type="text" placeholder="y" id="tY">
+                <button id="shift" onclick="makeShift()">Execute</button>
+            </div>
+            <p>Scale</p>
+            <div class="subGroup">
+                <input type="text" placeholder="x" id="sX">
+                <input type="text" placeholder="y" id="sY">
+                <button id="scaleButton" onclick="makeScale()">Execute</button>
+
+            </div>
+            <p>Rotation</p>
+            <div class="subGroup">
+                <input type="text" placeholder="angle" id="angle">
+                <button id="rotation" onclick="makeRotation()">Execute</button>
+            </div>
+            <p>Shear</p>
+            <div class="subGroup">
+                <input type="text" placeholder="x" id="ShX">
+                <input type="text" placeholder="y" id="ShY">
+                <button id="shear" onclick="makeShear()">Execute</button>
+            </div>
+            <label for="pixelSize">Line thickness</label>
+            <select name="select" id="pixelSize" onchange="setPixelSize()">
+                <option value="1">1px</option>
+                <option value="2">2px</option>
+                <option value="3">3px</option>
             </select>
+            <button id="clearDashbord" onclick="createImages()">ClearDashbord</button>
         </div>
     </body>
 </html>

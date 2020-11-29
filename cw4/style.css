@@ -24,6 +24,7 @@ body
 #matrix
 {
     border-collapse: collapse;
+    margin-bottom: 5px;
 }
 #matrix td
 {
@@ -36,4 +37,26 @@ body
     margin-top: 5px;
     border-radius: 3px;
 }
+.subGroup
+{
 
+    display: flex;
+    flex-direction: row;
+}
+input
+{
+    width: 50px;
+    margin-right: 5px;
+}
+p
+{
+    margin: 5px 0;
+}
+label
+{
+    margin: 5px 0;
+}
+select
+{
+    margin-bottom: 10px;
+}
